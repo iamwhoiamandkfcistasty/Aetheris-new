@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aetheris Core // Box 18: Julia</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background-color: #03020d; color: #ffffff; font-family: system-ui, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; padding: 2rem; }
+        .header-node { text-align: center; margin-bottom: 3rem; }
+        .title-glow { color: #9558b2; font-size: 2.8rem; font-weight: 900; text-transform: uppercase; text-shadow: 0 0 15px rgba(149, 88, 178, 0.4); }
+        .subtitle { color: #8a8ca3; font-size: 1.1rem; margin-top: 0.5rem; }
+        .math-card { background: #0a0724; border: 2px solid rgba(149, 88, 178, 0.3); border-radius: 24px; padding: 3rem; max-width: 650px; width: 100%; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6); }
+        .card-heading { font-size: 1.5rem; font-weight: 800; margin-bottom: 1rem; }
+        .description-text { color: #8a8ca3; font-size: 0.95rem; line-height: 1.6; margin-bottom: 2rem; }
+        .highlight-text { color: #9558b2; font-weight: 800; }
+        .julia-display { background: #020108; border-left: 3px solid #9558b2; padding: 1.2rem; border-radius: 8px; font-family: 'Courier New', Courier, monospace; font-size: 0.85rem; color: #a0aec0; line-height: 1.5; margin-bottom: 1.5rem; }
+        .keyword { color: #ff79c6; }
+        .function-name { color: #50fa7b; }
+        .action-button { width: 100%; background: linear-gradient(135deg, #9558b2 0%, #b074cc 100%); color: #fff; border: none; padding: 1rem; border-radius: 12px; font-weight: 900; font-size: 1rem; cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px; }
+        .compile-log { margin-top: 1.2rem; background: rgba(149, 88, 178, 0.08); border: 1px dashed #9558b2; color: #b074cc; padding: 1rem; border-radius: 8px; font-family: monospace; font-size: 0.85rem; display: none; }
+        .footer-node { margin-top: 5rem; color: #515470; font-size: 0.85rem; font-family: monospace; letter-spacing: 1px; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+
+    <div class="header-node">
+        <h1 class="title-glow">Aetheris // Box 18</h1>
+        <p class="subtitle">Language 18: Julia High-Performance Math Core</p>
+    </div>
+
+    <!-- 🔢 BOX 18: JULIA MATHEMATICAL SYSTEMS INTERACTION -->
+    <div class="math-card">
+        <h2 class="card-heading">🔢 Intense Mathematical Computations</h2>
+        <p class="description-text">
+            <span class="highlight-text">[18. Julia]:</span> Executes intense mathematical calculations and scientific simulations for complex courses [INDEX]. It compiles native code via LLVM to achieve pure C-like execution speeds for numerical matrix algebra operations.
+        </p>
+
+        <!-- Visual representation of Julia syntax -->
+        <div class="julia-display">
+            <span class="keyword">function</span> <span class="function-name">simulate_physics</span>(matrix_node)<br>
+            &nbsp;&nbsp;return matrix_node * transpose(matrix_node)<br>
+            <span class="keyword">end</span>
+        </div>
+
+        <button type="button" class="action-button" onclick="runJuliaScript()">Compute Complex Matrices 🔢</button>
+        <div id="juliaLog" class="compile-log"></div>
+    </div>
+
+    <div class="footer-node">Aetheris Layer System // State: Julia JIT Compiler Ready [INDEX]</div>
+
+    <script>
+        function runJuliaScript() {
+            const log = document.getElementById('juliaLog');
+            log.style.display = 'block';
+            log.innerHTML = `> [Julia JIT] Parsing abstract mathematical expressions...<br>` +
+                            `> Executing high-velocity matrix multiplication layers and array bounds...<br>` +
+                            `✔ SUCCESS: Intense mathematical calculations finalized across multi-dimensional arrays!`;
+        }
+    </script>
+
+</body>
+</html>
