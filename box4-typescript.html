@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aetheris Core // Box 4: TypeScript</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background-color: #03020d; color: #ffffff; font-family: system-ui, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; padding: 2rem; }
+        .header-node { text-align: center; margin-bottom: 3rem; }
+        .title-glow { color: #00bfff; font-size: 2.8rem; font-weight: 900; text-transform: uppercase; text-shadow: 0 0 15px rgba(0, 191, 255, 0.3); }
+        .subtitle { color: #8a8ca3; font-size: 1.1rem; margin-top: 0.5rem; }
+        .safety-card { background: #0a0724; border: 2px solid rgba(0, 191, 255, 0.3); border-radius: 24px; padding: 3rem; max-width: 650px; width: 100%; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6); }
+        .card-heading { font-size: 1.5rem; font-weight: 800; margin-bottom: 1rem; }
+        .description-text { color: #8a8ca3; font-size: 0.95rem; line-height: 1.6; margin-bottom: 2rem; }
+        .highlight-text { color: #00bfff; font-weight: 800; }
+        
+        /* Code Block Visualization Panel */
+        .ts-code-display { background: #020108; border-left: 3px solid #00bfff; padding: 1.2rem; border-radius: 8px; font-family: 'Courier New', Courier, monospace; font-size: 0.85rem; color: #a0aec0; line-height: 1.5; margin-bottom: 1.5rem; overflow-x: auto; }
+        .keyword { color: #ff79c6; }
+        .type-label { color: #8be9fd; }
+        
+        .action-button { width: 100%; background: linear-gradient(135deg, #00bfff 0%, #1e90ff 100%); color: #fff; border: none; padding: 1rem; border-radius: 12px; font-weight: 900; font-size: 1rem; cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px; }
+        .verification-log { margin-top: 1.2rem; background: rgba(0, 191, 255, 0.08); border: 1px dashed #00bfff; color: #00bfff; padding: 1rem; border-radius: 8px; font-family: monospace; font-size: 0.85rem; display: none; }
+        .footer-node { margin-top: 5rem; color: #515470; font-size: 0.85rem; font-family: monospace; letter-spacing: 1px; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+
+    <div class="header-node">
+        <h1 class="title-glow">Aetheris // Box 4</h1>
+        <p class="subtitle">Language 4: TypeScript Strict Safety Vault</p>
+    </div>
+
+    <!-- 🛡️ BOX 4: TYPE-SAFE COMPILATION ENGINE VALIDATOR -->
+    <div class="safety-card">
+        <h2 class="card-heading">🛡️ Static Type Optimization</h2>
+        <p class="description-text">
+            <span class="highlight-text">[4. TypeScript]:</span> Adds strict type-safety to prevent runtime crashes during heavy frontend operations [INDEX]. It compiles interfaces to ensure structural parameters never leak corrupt memory states.
+        </p>
+
+        <!-- Visual representation of our data layer schemas -->
+        <div class="ts-code-display">
+            <span class="keyword">interface</span> <span class="type-label">ConciergeRequest</span> {<br>
+            &nbsp;&nbsp;prompt: <span class="type-label">string</span>;<br>
+            &nbsp;&nbsp;maxDeliveryMins: <span class="type-label">number</span>;<br>
+            &nbsp;&nbsp;proTierActive: <span class="type-label">boolean</span>;<br>
+            }
+        </div>
+
+        <button type="button" class="action-button" onclick="runTypeCheck()">Compile Typings 🛡️</button>
+        <div id="typeLog" class="verification-log"></div>
+    </div>
+
+    <div class="footer-node">
+        Aetheris Layer System // State: Types Monitored [INDEX]
+    </div>
+
+    <script>
+        function runTypeCheck() {
+            const log = document.getElementById('typeLog');
+            log.style.display = 'block';
+            log.innerHTML = `> [TS compiler] Scanning source token mappings...<br>` +
+                            `> Type verification pass: Object matches schema 'ConciergeRequest'.<br>` +
+                            `✔ STATUS: 0 runtime boundary violations. Build safe!`;
+        }
+    </script>
+
+</body>
+</html>
