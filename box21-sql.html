@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aetheris Core // Box 21: SQL</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background-color: #03020d; color: #ffffff; font-family: system-ui, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; padding: 2rem; }
+        .header-node { text-align: center; margin-bottom: 3rem; }
+        .title-glow { color: #00758f; font-size: 2.8rem; font-weight: 900; text-transform: uppercase; text-shadow: 0 0 15px rgba(0, 117, 143, 0.4); }
+        .subtitle { color: #8a8ca3; font-size: 1.1rem; margin-top: 0.5rem; }
+        .db-card { background: #0a0724; border: 2px solid rgba(0, 117, 143, 0.3); border-radius: 24px; padding: 3rem; max-width: 650px; width: 100%; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6); }
+        .card-heading { font-size: 1.5rem; font-weight: 800; margin-bottom: 1rem; }
+        .description-text { color: #8a8ca3; font-size: 0.95rem; line-height: 1.6; margin-bottom: 2rem; }
+        .highlight-text { color: #00758f; font-weight: 800; }
+        .sql-display { background: #020108; border-left: 3px solid #00758f; padding: 1.2rem; border-radius: 8px; font-family: 'Courier New', Courier, monospace; font-size: 0.85rem; color: #a0aec0; line-height: 1.5; margin-bottom: 1.5rem; }
+        .keyword { color: #ff79c6; }
+        .table-name { color: #8be9fd; }
+        .action-button { width: 100%; background: linear-gradient(135deg, #00758f 0%, #009cb2 100%); color: #fff; border: none; padding: 1rem; border-radius: 12px; font-weight: 900; font-size: 1rem; cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px; }
+        .compile-log { margin-top: 1.2rem; background: rgba(0, 117, 143, 0.08); border: 1px dashed #00758f; color: #009cb2; padding: 1rem; border-radius: 8px; font-family: monospace; font-size: 0.85rem; display: none; }
+        .footer-node { margin-top: 5rem; color: #515470; font-size: 0.85rem; font-family: monospace; letter-spacing: 1px; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+
+    <div class="header-node">
+        <h1 class="title-glow">Aetheris // Box 21</h1>
+        <p class="subtitle">Language 21: SQL Relational Database Ledger</p>
+    </div>
+
+    <!-- 🗃️ BOX 21: SQL ACID-COMPLIANT RELATION INTERACTION -->
+    <div class="db-card">
+        <h2 class="card-heading">🗃️ Safe ACID Relational Mutations</h2>
+        <p class="description-text">
+            <span class="highlight-text">[21. SQL]:</span> Executes safe, ACID-compliant relational mutations for student database records [INDEX]. It safeguards transactional updates across global account profiles, preventing data corruption across concurrent search ledger arrays.
+        </p>
+
+        <!-- Visual representation of SQL query syntax -->
+        <div class="sql-display">
+            <span class="keyword">BEGIN TRANSACTION</span>;<br>
+            <span class="keyword">UPDATE</span> <span class="table-name">StudentRecords</span> <span class="keyword">SET</span> pro_tier = true <span class="keyword">WHERE</span> id = 101;<br>
+            <span class="keyword">COMMIT</span>;
+        </div>
+
+        <button type="button" class="action-button" onclick="runSqlMutation()">Commit Query Mutation 🗃️</button>
+        <div id="sqlLog" class="compile-log"></div>
+    </div>
+
+    <div class="footer-node">Aetheris Layer System // State: Relational Database Matrix Active [INDEX]</div>
+
+    <script>
+        function runSqlMutation() {
+            const log = document.getElementById('sqlLog');
+            log.style.display = 'block';
+            log.innerHTML = `> [SQL Engine] Initializing storage parsing structures...<br>` +
+                            `> Locking row indexes & executing transactional integrity validation checks...<br>` +
+                            `✔ SUCCESS: 1 row mutated safely. ACID boundaries secured perfectly!`;
+        }
+    </script>
+
+</body>
+</html>
