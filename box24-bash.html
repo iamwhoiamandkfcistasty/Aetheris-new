@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aetheris Core // Box 24: Bash / Shell</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background-color: #03020d; color: #ffffff; font-family: system-ui, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; padding: 2rem; }
+        .header-node { text-align: center; margin-bottom: 3rem; }
+        .title-glow { color: #4eaa25; font-size: 2.8rem; font-weight: 900; text-transform: uppercase; text-shadow: 0 0 15px rgba(78, 170, 37, 0.4); }
+        .subtitle { color: #8a8ca3; font-size: 1.1rem; margin-top: 0.5rem; }
+        .bash-card { background: #0a0724; border: 2px solid rgba(78, 170, 37, 0.3); border-radius: 24px; padding: 3rem; max-width: 650px; width: 100%; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6); }
+        .card-heading { font-size: 1.5rem; font-weight: 800; margin-bottom: 1rem; }
+        .description-text { color: #8a8ca3; font-size: 0.95rem; line-height: 1.6; margin-bottom: 2rem; }
+        .highlight-text { color: #4eaa25; font-weight: 800; }
+        .bash-display { background: #020108; border-left: 3px solid #4eaa25; padding: 1.2rem; border-radius: 8px; font-family: 'Courier New', Courier, monospace; font-size: 0.85rem; color: #a0aec0; line-height: 1.5; margin-bottom: 1.5rem; }
+        .keyword { color: #ff79c6; }
+        .string { color: #f1fa8c; }
+        .action-button { width: 100%; background: linear-gradient(135deg, #4eaa25 0%, #63cc33 100%); color: #fff; border: none; padding: 1rem; border-radius: 12px; font-weight: 900; font-size: 1rem; cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px; }
+        .compile-log { margin-top: 1.2rem; background: rgba(78, 170, 37, 0.08); border: 1px dashed #4eaa25; color: #63cc33; padding: 1rem; border-radius: 8px; font-family: monospace; font-size: 0.85rem; display: none; }
+        .footer-node { margin-top: 5rem; color: #515470; font-size: 0.85rem; font-family: monospace; letter-spacing: 1px; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+
+    <div class="header-node">
+        <h1 class="title-glow">Aetheris // Box 24</h1>
+        <p class="subtitle">Language 24: Bash / Shell Infrastructure Automation</p>
+    </div>
+
+    <!-- 🐚 BOX 24: BASH INFRASTRUCTURE AUTOMATION CONTROL -->
+    <div class="bash-card">
+        <h2 class="card-heading">🐚 System Scripting & DevOps Deployments</h2>
+        <p class="description-text">
+            <span class="highlight-text">[24. Bash / Shell]:</span> Drives server orchestration, automated builds, environment check paths, and cloud container networking parameters [INDEX]. It triggers immediate cron routines to clear legacy server logs and scale system processes flawlessly.
+        </p>
+
+        <!-- Visual representation of Bash syntax -->
+        <div class="bash-display">
+            <span class="keyword">#!/bin/bash</span><br>
+            <span class="keyword">echo</span> <span class="string">"Initializing Aetheris deployment script..."</span><br>
+            <span class="keyword">if</span> [ <span class="string">"$STATUS"</span> == <span class="string">"online"</span> ]; <span class="keyword">then</span><br>
+            &nbsp;&nbsp;vercel --prod --confirm<br>
+            <span class="keyword">fi</span>
+        </div>
+
+        <button type="button" class="action-button" onclick="runBashScript()">Execute Shell Script 🐚</button>
+        <div id="bashLog" class="compile-log"></div>
+    </div>
+
+    <div class="footer-node">Aetheris Layer System // State: GNU Bash Terminal Active [INDEX]</div>
+
+    <script>
+        function runBashScript() {
+            const log = document.getElementById('bashLog');
+            log.style.display = 'block';
+            log.innerHTML = `> [bash] Allocating virtual file descriptors & evaluation tasks...<br>` +
+                            `> Pumping environment variable sets across background channels...<br>` +
+                            `✔ SUCCESS: DevOps cloud configuration pathways verified. Deployment automated!`;
+        }
+    </script>
+
+</body>
+</html>
