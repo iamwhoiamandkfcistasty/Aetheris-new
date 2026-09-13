@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aetheris Core // Box 25: Lua</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background-color: #03020d; color: #ffffff; font-family: system-ui, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; padding: 2rem; }
+        .header-node { text-align: center; margin-bottom: 3rem; }
+        .title-glow { color: #000080; font-size: 2.8rem; font-weight: 900; text-transform: uppercase; text-shadow: 0 0 15px rgba(0, 0, 128, 0.6); }
+        .subtitle { color: #8a8ca3; font-size: 1.1rem; margin-top: 0.5rem; }
+        .embedded-card { background: #0a0724; border: 2px solid rgba(0, 0, 128, 0.4); border-radius: 24px; padding: 3rem; max-width: 650px; width: 100%; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6); }
+        .card-heading { font-size: 1.5rem; font-weight: 800; margin-bottom: 1rem; }
+        .description-text { color: #8a8ca3; font-size: 0.95rem; line-height: 1.6; margin-bottom: 2rem; }
+        .highlight-text { color: #3174f1; font-weight: 800; }
+        .lua-display { background: #020108; border-left: 3px solid #000080; padding: 1.2rem; border-radius: 8px; font-family: 'Courier New', Courier, monospace; font-size: 0.85rem; color: #a0aec0; line-height: 1.5; margin-bottom: 1.5rem; }
+        .keyword { color: #ff79c6; }
+        .function { color: #50fa7b; }
+        .action-button { width: 100%; background: linear-gradient(135deg, #000080 0%, #3174f1 100%); color: #fff; border: none; padding: 1rem; border-radius: 12px; font-weight: 900; font-size: 1rem; cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px; box-shadow: 0 5px 15px rgba(0,0,128,0.3); }
+        .compile-log { margin-top: 1.2rem; background: rgba(0, 0, 128, 0.08); border: 1px dashed #3174f1; color: #3174f1; padding: 1rem; border-radius: 8px; font-family: monospace; font-size: 0.85rem; display: none; }
+        .footer-node { margin-top: 5rem; color: #515470; font-size: 0.85rem; font-family: monospace; letter-spacing: 1px; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+
+    <div class="header-node">
+        <h1 class="title-glow">Aetheris // Box 25</h1>
+        <p class="subtitle">Language 25: Lua High-Speed Embedded Scripting</p>
+    </div>
+
+    <!-- 🌌 BOX 25: LUA EMBEDDED CONFIGURATION INTERACTION -->
+    <div class="embedded-card">
+        <h2 class="card-heading">🌌 Ultra-Lightweight Configuration & Extension Core</h2>
+        <p class="description-text">
+            <span class="highlight-text">[25. Lua]:</span> Delivers lightning-fast embedded execution contexts for rapid indexing engines, network proxies, and real-time configuration arrays [INDEX]. It compiles instantly via LuaJIT to match bare-metal execution parameters with zero memory footprint.
+        </p>
+
+        <!-- Visual representation of Lua syntax -->
+        <div class="lua-display">
+            <span class="keyword">local</span> config_matrix = {}<br>
+            <span class="keyword">function</span> config_matrix.<span class="function">initialize_scour</span>(vector_id)<br>
+            &nbsp;&nbsp;<span class="keyword">print</span>(<span class="keyword">"Lua Config Core Active: "</span> .. vector_id)<br>
+            <span class="keyword">end</span>
+        </div>
+
+        <button type="button" class="action-button" onclick="runLuaScript()">Boot Embedded Lua Node 🌌</button>
+        <div id="luaLog" class="compile-log"></div>
+    </div>
+
+    <div class="footer-node">Aetheris Layer System // State: 25/25 MATRIX FULLY OPERATIONAL</div>
+
+    <script>
+        function runLuaScript() {
+            const log = document.getElementById('luaLog');
+            log.style.display = 'block';
+            log.innerHTML = `> [LuaJIT Engine] Compiling abstract source tokens directly into memory cache...<br>` +
+                            `> Binding lightning-fast extension scripts into active C-level backend runtimes...<br>` +
+                            `✔ SUCCESS: Embedded configuration arrays initialized! 25/25 LANGUAGE LOOP COMPLETE!`;
+        }
+    </script>
+
+</body>
+</html>
