@@ -1,6 +1,8 @@
 {
   "version": 2,
+  "cleanUrls": true,
   "routes": [
+    { "src": "/", "dest": "/box1_html5.html" },
     { "src": "/box1", "dest": "/box1_html5.html" },
     { "src": "/box2", "dest": "/box2_css3.html" },
     { "src": "/box3", "dest": "/box3_javascript.html" },
@@ -28,4 +30,5 @@
     { "src": "/box25", "dest": "/box25_lua.html" }
   ]
 }
+
 
