@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aetheris Core // Box 5: Sass (SCSS)</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background-color: #03020d; color: #ffffff; font-family: system-ui, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; padding: 2rem; }
+        .header-node { text-align: center; margin-bottom: 3rem; }
+        .title-glow { color: #db7093; font-size: 2.8rem; font-weight: 900; text-transform: uppercase; text-shadow: 0 0 15px rgba(219, 112, 147, 0.3); }
+        .subtitle { color: #8a8ca3; font-size: 1.1rem; margin-top: 0.5rem; }
+        .theme-card { background: #0a0724; border: 2px solid rgba(219, 112, 147, 0.3); border-radius: 24px; padding: 3rem; max-width: 650px; width: 100%; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6); }
+        .card-heading { font-size: 1.5rem; font-weight: 800; margin-bottom: 1rem; }
+        .description-text { color: #8a8ca3; font-size: 0.95rem; line-height: 1.6; margin-bottom: 2rem; }
+        .highlight-text { color: #db7093; font-weight: 800; }
+        
+        /* SCSS Code Block Panel Layout */
+        .scss-display { background: #020108; border-left: 3px solid #db7093; padding: 1.2rem; border-radius: 8px; font-family: 'Courier New', Courier, monospace; font-size: 0.85rem; color: #a0aec0; line-height: 1.5; margin-bottom: 1.5rem; }
+        .variable { color: #50fa7b; }
+        .nesting { color: #ff79c6; }
+        
+        .action-button { width: 100%; background: linear-gradient(135deg, #db7093 0%, #ff69b4 100%); color: #fff; border: none; padding: 1rem; border-radius: 12px; font-weight: 900; font-size: 1rem; cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px; }
+        .compile-log { margin-top: 1.2rem; background: rgba(219, 112, 147, 0.08); border: 1px dashed #db7093; color: #db7093; padding: 1rem; border-radius: 8px; font-family: monospace; font-size: 0.85rem; display: none; }
+        .footer-node { margin-top: 5rem; color: #515470; font-size: 0.85rem; font-family: monospace; letter-spacing: 1px; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+
+    <div class="header-node">
+        <h1 class="title-glow">Aetheris // Box 5</h1>
+        <p class="subtitle">Language 5: Sass (SCSS) Nested Style Engine</p>
+    </div>
+
+    <!-- 💎 BOX 5: SASS COMPILATION MAP ENGINE -->
+    <div class="theme-card">
+        <h2 class="card-heading">💎 Modular Variable Scaling</h2>
+        <p class="description-text">
+            <span class="highlight-text">[5. Sass (SCSS)]:</span> Compiles advanced modular styles, variables, and theme configurations [INDEX]. It clusters your design vectors cleanly so changing one global color value updates the entire layout array instantly.
+        </p>
+
+        <!-- Visual representation of SCSS layout tokens -->
+        <div class="scss-display">
+            <span class="variable">$astral-purple</span>: #7000ff;<br>
+            <span class="nesting">.search-section</span> {<br>
+            &nbsp;&nbsp;background: #0a0724;<br>
+            &nbsp;&nbsp;<span class="nesting">.search-input</span> { border-color: <span class="variable">$astral-purple</span>; }<br>
+            }
+        </div>
+
+        <button type="button" class="action-button" onclick="runSassCompile()">Compile Styles 💎</button>
+        <div id="sassLog" class="compile-log"></div>
+    </div>
+
+    <div class="footer-node">
+        Aetheris Layer System // State: SCSS Mixins Parsed [INDEX]
+    </div>
+
+    <script>
+        function runSassCompile() {
+            const log = document.getElementById('sassLog');
+            log.style.display = 'block';
+            log.innerHTML = `> [Sass Engine] Reading abstract syntax trees...<br>` +
+                            `> Expanding nested components and resolving style tokens...<br>` +
+                            `✔ SUCCESS: Style dictionary compiled to production static CSS!`;
+        }
+    </script>
+
+</body>
+</html>
