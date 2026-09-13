@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aetheris Core // Box 3: JavaScript</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background-color: #03020d; color: #ffffff; font-family: system-ui, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; padding: 2rem; }
+        .header-node { text-align: center; margin-bottom: 3rem; }
+        .title-glow { color: #ffd700; font-size: 2.8rem; font-weight: 900; text-transform: uppercase; text-shadow: 0 0 15px rgba(255, 215, 0, 0.3); }
+        .subtitle { color: #8a8ca3; font-size: 1.1rem; margin-top: 0.5rem; }
+        .interactive-card { background: #0a0724; border: 2px solid rgba(255, 215, 0, 0.3); border-radius: 24px; padding: 3rem; max-width: 650px; width: 100%; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6); }
+        .card-heading { font-size: 1.5rem; font-weight: 800; margin-bottom: 1rem; }
+        .description-text { color: #8a8ca3; font-size: 0.95rem; line-height: 1.6; margin-bottom: 2.5rem; }
+        .highlight-text { color: #ffd700; font-weight: 800; }
+        .action-button { width: 100%; background: linear-gradient(135deg, #ffd700 0%, #ffa500 100%); color: #000; border: none; padding: 1rem; border-radius: 12px; font-weight: 900; font-size: 1rem; cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px; }
+        
+        /* JavaScript Target Flash Notification UI Block */
+        .toast-popup { margin-top: 1.5rem; background: rgba(255, 215, 0, 0.1); border: 1px solid #ffd700; color: #ffd700; padding: 1rem; border-radius: 8px; font-family: monospace; font-size: 0.9rem; font-weight: bold; text-align: center; display: none; }
+        .footer-node { margin-top: 5rem; color: #515470; font-size: 0.85rem; font-family: monospace; letter-spacing: 1px; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+
+    <div class="header-node">
+        <h1 class="title-glow">Aetheris // Box 3</h1>
+        <p class="subtitle">Language 3: JavaScript Interactive State Hub</p>
+    </div>
+
+    <!-- ⚡ BOX 3: INTERACTIVE STATE CLIENT ENGINE -->
+    <div class="interactive-card">
+        <h2 class="card-heading">⚡ Real-Time Logic Interaction</h2>
+        <p class="description-text">
+            <span class="highlight-text">[3. JavaScript]:</span> Controls client-side interactivity, state management, and real-time DOM updates [INDEX]. It binds listeners onto your action clicks to transition layout panels instantly.
+        </p>
+
+        <!-- Dynamic Action Button Switch Trigger -->
+        <button type="button" class="action-button" onclick="triggerClientEvent()">Fire Client Logic ⚡</button>
+        
+        <!-- Target DOM Element Manipulated by Script -->
+        <div id="statusToast" class="toast-popup">> event_thread_01 resolved! State synced inside DOM tree.</div>
+    </div>
+
+    <div class="footer-node">
+        Aetheris Layer System // State: Event Listener Active [INDEX]
+    </div>
+
+    <!-- ==========================================
+         🧠 LANGUAGE 3: JAVASCRIPT EXECUTABLE LOGIC 
+         ========================================== -->
+    <script>
+        function triggerClientEvent() {
+            const toast = document.getElementById('statusToast');
+            toast.style.display = 'block';
+            
+            // Auto-collapse display row layout frame after 2.5 seconds
+            setTimeout(() => {
+                toast.style.display = 'none';
+            }, 2500);
+        }
+    </script>
+
+</body>
+</html>
