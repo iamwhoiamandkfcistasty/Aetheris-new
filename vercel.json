@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "routes": [
+    { "src": "/box1", "dest": "/box1_html5.html" },
+    { "src": "/box2", "dest": "/box2_css3.html" },
+    { "src": "/box3", "dest": "/box3_javascript.html" },
+    { "src": "/box4", "dest": "/box4_typescript.html" },
+    { "src": "/box5", "dest": "/box5_sass.html" },
+    { "src": "/box6", "dest": "/box6_dart.html" },
+    { "src": "/box7", "dest": "/box7_kotlin.html" },
+    { "src": "/box8", "dest": "/box8_swift.html" },
+    { "src": "/box9", "dest": "/box9_objc.html" },
+    { "src": "/box10", "dest": "/box10_java.html" },
+    { "src": "/box11", "dest": "/box11_golang.html" },
+    { "src": "/box12", "dest": "/box12_rust.html" },
+    { "src": "/box13", "dest": "/box13_cpp.html" },
+    { "src": "/box14", "dest": "/box14_c.html" },
+    { "src": "/box15", "dest": "/box15_csharp.html" },
+    { "src": "/box16", "dest": "/box16_python.html" },
+    { "src": "/box17", "dest": "/box17_r.html" },
+    { "src": "/box18", "dest": "/box18_julia.html" },
+    { "src": "/box19", "dest": "/box19_matlab.html" },
+    { "src": "/box20", "dest": "/box20_scala.html" },
+    { "src": "/box21", "dest": "/box21_sql.html" },
+    { "src": "/box22", "dest": "/box22_php.html" },
+    { "src": "/box23", "dest": "/box23_ruby.html" },
+    { "src": "/box24", "dest": "/box24_bash.html" },
+    { "src": "/box25", "dest": "/box25_lua.html" },
+    { "src": "/(.*)", "dest": "/server.js" }
+  ]
+}
