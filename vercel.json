@@ -25,7 +25,7 @@
     { "src": "/box22", "dest": "/box22_php.html" },
     { "src": "/box23", "dest": "/box23_ruby.html" },
     { "src": "/box24", "dest": "/box24_bash.html" },
-    { "src": "/box25", "dest": "/box25_lua.html" },
-    { "src": "/(.*)", "dest": "/server.js" }
+    { "src": "/box25", "dest": "/box25_lua.html" }
   ]
 }
+
