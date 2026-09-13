@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aetheris Core // Box 12: Rust</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background-color: #03020d; color: #ffffff; font-family: system-ui, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; padding: 2rem; }
+        .header-node { text-align: center; margin-bottom: 3rem; }
+        .title-glow { color: #f74c00; font-size: 2.8rem; font-weight: 900; text-transform: uppercase; text-shadow: 0 0 15px rgba(247, 76, 0, 0.4); }
+        .subtitle { color: #8a8ca3; font-size: 1.1rem; margin-top: 0.5rem; }
+        .safety-card { background: #0a0724; border: 2px solid rgba(247, 76, 0, 0.3); border-radius: 24px; padding: 3rem; max-width: 650px; width: 100%; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6); }
+        .card-heading { font-size: 1.5rem; font-weight: 800; margin-bottom: 1rem; }
+        .description-text { color: #8a8ca3; font-size: 0.95rem; line-height: 1.6; margin-bottom: 2rem; }
+        .highlight-text { color: #f74c00; font-weight: 800; }
+        .rust-display { background: #020108; border-left: 3px solid #f74c00; padding: 1.2rem; border-radius: 8px; font-family: 'Courier New', Courier, monospace; font-size: 0.85rem; color: #a0aec0; line-height: 1.5; margin-bottom: 1.5rem; }
+        .keyword { color: #ff79c6; }
+        .type-name { color: #8be9fd; }
+        .action-button { width: 100%; background: linear-gradient(135deg, #f74c00 0%, #ff6c2f 100%); color: #fff; border: none; padding: 1rem; border-radius: 12px; font-weight: 900; font-size: 1rem; cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px; }
+        .compile-log { margin-top: 1.2rem; background: rgba(247, 76, 0, 0.08); border: 1px dashed #f74c00; color: #f74c00; padding: 1rem; border-radius: 8px; font-family: monospace; font-size: 0.85rem; display: none; }
+        .footer-node { margin-top: 5rem; color: #515470; font-size: 0.85rem; font-family: monospace; letter-spacing: 1px; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+
+    <div class="header-node">
+        <h1 class="title-glow">Aetheris // Box 12</h1>
+        <p class="subtitle">Language 12: Rust High-Safety Memory & Compression Core</p>
+    </div>
+
+    <!-- 🦀 BOX 12: RUST MEMORY ALLOCATION & COMPRESSION SYSTEMS -->
+    <div class="safety-card">
+        <h2 class="card-heading">🦀 Zero-Cost Abstractions & Thread Safety</h2>
+        <p class="description-text">
+            <span class="highlight-text">[12. Rust]:</span> Manages high-safety, lightning-fast memory handling for dynamic file compression [INDEX]. It guarantees compile-time memory checks via strict borrow checker constraints to enforce pure concurrency execution boundaries.
+        </p>
+
+        <!-- Visual representation of Rust syntax -->
+        <div class="rust-display">
+            <span class="keyword">fn</span> main() {<br>
+            &nbsp;&nbsp;<span class="keyword">let</span> compress_node = <span class="type-name">String</span>::from(<span class="keyword">"aetheris_data"</span>);<br>
+            &nbsp;&nbsp;process_buffer(&amp;compress_node);<br>
+            }
+        </div>
+
+        <button type="button" class="action-button" onclick="runRustCompile()">Invoke Borrow Checker 🛡️</button>
+        <div id="rustLog" class="compile-log"></div>
+    </div>
+
+    <div class="footer-node">Aetheris Layer System // State: Cargo Compilation Layer Ready</div>
+
+    <script>
+        function runRustCompile() {
+            const log = document.getElementById('rustLog');
+            log.style.display = 'block';
+            log.innerHTML = `> [rustc] Booting LLVM backend analysis pipelines...<br>` +
+                            `> Enforcing explicit ownership scopes & variable lifetime checks...<br>` +
+                            `✔ SUCCESS: Dynamic asset buffer compressed via zero-copy schemas safely!`;
+        }
+    </script>
+
+</body>
+</html>
